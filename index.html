@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magical Cafe ALICE | 秋葉原の王道コンセプトカフェ</title>
+    <meta name="description" content="秋葉原にある魔法と夢のコンセプトカフェ「Magical Cafe ALICE」。可愛いメイドたちと素敵なティータイムをお過ごしください。">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Floating Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Floating Sparkles -->
+    <div class="sparkle-container">
+        <div class="floating-sparkle">💖</div>
+        <div class="floating-sparkle">⭐</div>
+        <div class="floating-sparkle">✨</div>
+        <div class="floating-sparkle">💕</div>
+        <div class="floating-sparkle">🌟</div>
+        <div class="floating-sparkle">💗</div>
+        <div class="floating-sparkle">⭐</div>
+        <div class="floating-sparkle">✨</div>
+        <div class="floating-sparkle">💖</div>
+        <div class="floating-sparkle">🌟</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-crown"></i></span>
+                Alice
+            </a>
+            <div class="nav-links">
+                <a href="#concept">Concept</a>
+                <a href="#guide">Guide</a>
+                <a href="#cast">Cast</a>
+                <a href="#system">System</a>
+                <a href="#events">Events</a>
+                <a href="#access">Access</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav">
+        <a href="#concept">Concept</a>
+        <a href="#guide">Guide</a>
+        <a href="#cast">Cast</a>
+        <a href="#system">System</a>
+        <a href="#events">Events</a>
+        <a href="#access">Access</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">Welcome to Wonderland</div>
+            <h1 class="hero-title">
+                <span class="fade-in-up delay-1">魔法と</span>
+                <span class="fade-in-up delay-2">夢の国へ</span>
+                <span class="fade-in-up delay-3">ようこそ</span>
+            </h1>
+            <p class="hero-subtitle fade-in-up delay-4">
+                秋葉原で一番可愛い<br>
+                王道コンセプトカフェ
+            </p>
+            <div class="hero-buttons fade-in-up delay-5">
+                <a href="#system" class="btn btn-primary">
+                    料金システムを見る <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#access" class="btn btn-secondary">
+                    アクセス <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- CSS Art Decoration Circle -->
+        <div class="hero-decoration">
+            <div class="circle-outer"></div>
+            <div class="circle-inner">
+                <div class="sparkle s1"><i class="fa-solid fa-star"></i></div>
+                <div class="sparkle s2"><i class="fa-solid fa-heart"></i></div>
+                <div class="sparkle s3"><i class="fa-solid fa-sparkles"></i></div>
+                <div class="sparkle s4"><i class="fa-solid fa-star"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Concept Section -->
+    <section id="concept" class="section concept-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Story</span>
+                <h2 class="section-title">コンセプト</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="concept-content">
+                <div class="concept-card">
+                    <div class="concept-icon">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3>魔法の時間</h3>
+                    <p>扉を開ければそこは不思議の国。<br>日常を忘れて、特別な魔法の時間をお過ごしください。</p>
+                </div>
+                <div class="concept-card">
+                    <div class="concept-icon">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <h3>癒しの空間</h3>
+                    <p>可愛いお屋敷で、自慢の紅茶と手作りスイーツ。<br>メイドたちが心を込めてお給仕します。</p>
+                </div>
+                <div class="concept-card">
+                    <div class="concept-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3>王道のおもてなし</h3>
+                    <p>「おかえりなさいませ」<br>秋葉原ならではの心温まる最高のおもてなしをお約束します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Enjoy Section -->
+    <section id="guide" class="section guide-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">First Time?</span>
+                <h2 class="section-title">楽しみ方ガイド</h2>
+                <div class="section-line"></div>
+                <p class="section-description">初めての方でも安心！メイドカフェの楽しみ方をご紹介します</p>
+            </div>
+
+            <div class="guide-steps">
+                <!-- Step 1 -->
+                <div class="guide-step">
+                    <div class="step-number">
+                        <span>1</span>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">
+                            <i class="fa-solid fa-door-open"></i>
+                            ご来店・受付
+                        </h3>
+                        <p class="step-description">
+                            「おかえりなさいませ、ご主人様（お嬢様）！」の挨拶でお出迎え。<br>
+                            受付でお名前と人数をお伝えください。混雑時は少々お待ちいただく場合がございます。
+                        </p>
+                        <div class="step-tips">
+                            <span class="tip-badge">💡 TIPS</span>
+                            <span>予約優先制です。事前予約がおすすめ！</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="guide-step">
+                    <div class="step-number">
+                        <span>2</span>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">
+                            <i class="fa-solid fa-chair"></i>
+                            お席へご案内
+                        </h3>
+                        <p class="step-description">
+                            メイドがお席までご案内いたします。<br>
+                            システムと料金についてご説明させていただきますので、ご不明な点はお気軽にお尋ねください。
+                        </p>
+                        <div class="step-tips">
+                            <span class="tip-badge">💡 TIPS</span>
+                            <span>お荷物はお席の下に置けます</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="guide-step">
+                    <div class="step-number">
+                        <span>3</span>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">
+                            <i class="fa-solid fa-utensils"></i>
+                            ご注文
+                        </h3>
+                        <p class="step-description">
+                            メニューからお好きなドリンクやフードをお選びください。<br>
+                            メイドのおすすめメニューもございますので、迷ったらぜひお声がけを♪
+                        </p>
+                        <div class="step-tips">
+                            <span class="tip-badge">💡 TIPS</span>
+                            <span>季節限定メニューは要チェック！</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="guide-step">
+                    <div class="step-number">
+                        <span>4</span>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            魔法の時間
+                        </h3>
+                        <p class="step-description">
+                            ドリンクやフードが運ばれてきたら、メイドと一緒に「おいしくな〜れ♪」の魔法をかけます！<br>
+                            一緒に手を動かして、楽しい時間をお過ごしください。
+                        </p>
+                        <div class="step-tips">
+                            <span class="tip-badge">💡 TIPS</span>
+                            <span>恥ずかしがらずに一緒に楽しみましょう！</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="guide-step">
+                    <div class="step-number">
+                        <span>5</span>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">
+                            <i class="fa-solid fa-comments"></i>
+                            メイドとの交流
+                        </h3>
+                        <p class="step-description">
+                            お食事を楽しみながら、メイドとおしゃべりタイム。<br>
+                            チェキ撮影やゲーム、ライブパフォーマンスなど、様々なアミューズメントもお楽しみいただけます。
+                        </p>
+                        <div class="step-tips">
+                            <span class="tip-badge">💡 TIPS</span>
+                            <span>推しメイドを見つけるのも楽しみの一つ！</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="guide-step">
+                    <div class="step-number">
+                        <span>6</span>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">
+                            <i class="fa-solid fa-cash-register"></i>
+                            お会計・お見送り
+                        </h3>
+                        <p class="step-description">
+                            お帰りの際はレジでお会計をお願いいたします。<br>
+                            メイド全員で「またお帰りをお待ちしております♪」とお見送りいたします。
+                        </p>
+                        <div class="step-tips">
+                            <span class="tip-badge">💡 TIPS</span>
+                            <span>各種キャッシュレス決済対応しています</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rules & Manners -->
+            <div class="guide-rules">
+                <h3 class="rules-title">
+                    <i class="fa-solid fa-shield-heart"></i>
+                    お願いとマナー
+                </h3>
+                <div class="rules-grid">
+                    <div class="rule-item">
+                        <i class="fa-solid fa-camera"></i>
+                        <p>店内での無断撮影はご遠慮ください</p>
+                    </div>
+                    <div class="rule-item">
+                        <i class="fa-solid fa-hand"></i>
+                        <p>メイドへの過度な接触はお控えください</p>
+                    </div>
+                    <div class="rule-item">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                        <p>他のお客様のご迷惑となる行為はご遠慮ください</p>
+                    </div>
+                    <div class="rule-item">
+                        <i class="fa-solid fa-user-secret"></i>
+                        <p>メイドの個人情報に関する質問はお控えください</p>
+                    </div>
+                    <div class="rule-item">
+                        <i class="fa-solid fa-ban-smoking"></i>
+                        <p>店内は全面禁煙となっております</p>
+                    </div>
+                    <div class="rule-item">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>みんなで楽しく、素敵な時間を過ごしましょう♪</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cast Section -->
+    <section id="cast" class="section cast-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Meet Our Maids</span>
+                <h2 class="section-title">キャスト紹介</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="cast-grid">
+                <!-- Cast 1 -->
+                <div class="cast-card">
+                    <img src="images/cast1.jpg" alt="りな" class="cast-image">
+                    <div class="cast-info">
+                        <h3 class="cast-name">りな</h3>
+                        <p class="cast-role">店長メイド</p>
+                        <div class="cast-tags">
+                            <span>#ツンデレ</span>
+                            <span>#アニメ</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cast 2 -->
+                <div class="cast-card">
+                    <img src="images/cast2.jpg" alt="める" class="cast-image">
+                    <div class="cast-info">
+                        <h3 class="cast-name">める</h3>
+                        <p class="cast-role">新人メイド</p>
+                        <div class="cast-tags">
+                            <span>#癒し系</span>
+                            <span>#歌</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cast 3 -->
+                <div class="cast-card">
+                    <img src="images/cast3.jpg" alt="こはく" class="cast-image">
+                    <div class="cast-info">
+                        <h3 class="cast-name">こはく</h3>
+                        <p class="cast-role">魔法使い</p>
+                        <div class="cast-tags">
+                            <span>#小悪魔</span>
+                            <span>#ダンス</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cast 4 -->
+                <div class="cast-card">
+                    <img src="images/cast4.jpg" alt="ゆめ" class="cast-image">
+                    <div class="cast-info">
+                        <h3 class="cast-name">ゆめ</h3>
+                        <p class="cast-role">お姫様</p>
+                        <div class="cast-tags">
+                            <span>#天然</span>
+                            <span>#お菓子</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-more-container">
+                <a href="#" class="btn btn-outline">キャスト一覧を見る</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Section -->
+    <section id="system" class="section system-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Price List</span>
+                <h2 class="section-title">システム・料金</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="system-container">
+                <div class="system-box">
+                    <h3 class="system-header">チャージ料金 (60分)</h3>
+                    <ul class="price-list">
+                        <li>
+                            <span class="item-name">男性</span>
+                            <span class="item-price">¥800</span>
+                        </li>
+                        <li>
+                            <span class="item-name">女性</span>
+                            <span class="item-price">¥600</span>
+                        </li>
+                        <li>
+                            <span class="item-name">延長 (30分)</span>
+                            <span class="item-price">¥400</span>
+                        </li>
+                    </ul>
+                    <p class="system-note">※ワンドリンクオーダー制となります</p>
+                </div>
+
+                <div class="system-box highlight">
+                    <div class="ribbon">Popular</div>
+                    <h3 class="system-header">飲み放題コース (60分)</h3>
+                    <ul class="price-list">
+                        <li>
+                            <span class="item-name">ソフトドリンク</span>
+                            <span class="item-price">¥1,800</span>
+                        </li>
+                        <li>
+                            <span class="item-name">アルコール</span>
+                            <span class="item-price">¥2,500</span>
+                        </li>
+                        <li>
+                            <span class="item-name">チェキ付きセット</span>
+                            <span class="item-price">¥3,200</span>
+                        </li>
+                    </ul>
+                    <p class="system-note">※チャージ料込みのお得なセットです！</p>
+                </div>
+
+                <div class="system-box">
+                    <h3 class="system-header">アミューズメント</h3>
+                    <ul class="price-list">
+                        <li>
+                            <span class="item-name">キャストドリンク</span>
+                            <span class="item-price">¥1,000</span>
+                        </li>
+                        <li>
+                            <span class="item-name">ツーショットチェキ</span>
+                            <span class="item-price">¥1,200</span>
+                        </li>
+                        <li>
+                            <span class="item-name">ライブパフォーマンス</span>
+                            <span class="item-price">¥1,500</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section events-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What's Coming</span>
+                <h2 class="section-title">イベントスケジュール</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="events-grid">
+                <!-- Event 1 -->
+                <div class="event-card featured">
+                    <div class="event-badge">今月のイチオシ</div>
+                    <div class="event-date">
+                        <div class="date-day">14</div>
+                        <div class="date-month">2月</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">
+                            <i class="fa-solid fa-heart"></i>
+                            バレンタインスペシャル
+                        </h3>
+                        <p class="event-description">
+                            メイドからの手作りチョコプレゼント♪<br>
+                            特別メニューとミニゲームもご用意！
+                        </p>
+                        <div class="event-details">
+                            <span class="event-time">
+                                <i class="fa-solid fa-clock"></i> 12:00 - 23:00
+                            </span>
+                            <span class="event-price">
+                                <i class="fa-solid fa-ticket"></i> チャージ料のみ
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="date-day">22</div>
+                        <div class="date-month">2月</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">
+                            <i class="fa-solid fa-music"></i>
+                            メイドライブ＆トーク
+                        </h3>
+                        <p class="event-description">
+                            人気メイドによる歌とダンスのステージ！<br>
+                            トークコーナーもあります
+                        </p>
+                        <div class="event-details">
+                            <span class="event-time">
+                                <i class="fa-solid fa-clock"></i> 19:00 - 21:00
+                            </span>
+                            <span class="event-price">
+                                <i class="fa-solid fa-ticket"></i> ¥1,500
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="event-card march">
+                    <div class="event-date">
+                        <div class="date-day">3</div>
+                        <div class="date-month">3月</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">
+                            <i class="fa-solid fa-cake-candles"></i>
+                            お誕生日会イベント
+                        </h3>
+                        <p class="event-description">
+                            2月・3月生まれのお客様を祝福！<br>
+                            バースデーソング＆記念チェキプレゼント
+                        </p>
+                        <div class="event-details">
+                            <span class="event-time">
+                                <i class="fa-solid fa-clock"></i> 15:00 - 18:00
+                            </span>
+                            <span class="event-price">
+                                <i class="fa-solid fa-ticket"></i> 無料
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="event-card march">
+                    <div class="event-date">
+                        <div class="date-day">10</div>
+                        <div class="date-month">3月</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">
+                            <i class="fa-solid fa-gamepad"></i>
+                            ゲーム大会
+                        </h3>
+                        <p class="event-description">
+                            メイドと一緒にボードゲーム対決！<br>
+                            優勝者には豪華景品をご用意
+                        </p>
+                        <div class="event-details">
+                            <span class="event-time">
+                                <i class="fa-solid fa-clock"></i> 14:00 - 17:00
+                            </span>
+                            <span class="event-price">
+                                <i class="fa-solid fa-ticket"></i> ¥800
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 5 -->
+                <div class="event-card march">
+                    <div class="event-date">
+                        <div class="date-day">20</div>
+                        <div class="date-month">3月</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">
+                            <i class="fa-solid fa-clover"></i>
+                            春のお花見パーティー
+                        </h3>
+                        <p class="event-description">
+                            桜モチーフの限定メニュー登場！<br>
+                            春らしい装飾でお出迎え
+                        </p>
+                        <div class="event-details">
+                            <span class="event-time">
+                                <i class="fa-solid fa-clock"></i> 終日開催
+                            </span>
+                            <span class="event-price">
+                                <i class="fa-solid fa-ticket"></i> 通常料金
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 6 -->
+                <div class="event-card march">
+                    <div class="event-date">
+                        <div class="date-day">31</div>
+                        <div class="date-month">3月</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">
+                            <i class="fa-solid fa-star"></i>
+                            新メイドお披露目会
+                        </h3>
+                        <p class="event-description">
+                            新しく加わるメイドの自己紹介イベント！<br>
+                            みんなで温かく迎えましょう♪
+                        </p>
+                        <div class="event-details">
+                            <span class="event-time">
+                                <i class="fa-solid fa-clock"></i> 18:00 - 20:00
+                            </span>
+                            <span class="event-price">
+                                <i class="fa-solid fa-ticket"></i> 無料
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="events-note">
+                <p><i class="fa-solid fa-circle-info"></i> イベントは予告なく変更・中止になる場合がございます。最新情報はSNSをご確認ください。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Access Section -->
+    <section id="access" class="section access-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Location</span>
+                <h2 class="section-title">アクセス</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="access-content">
+                <div class="access-info">
+                    <div class="info-item">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <div>
+                            <h4>住所</h4>
+                            <p>東京都千代田区外神田1-X-X<br>アキバドリームビル 3F</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <h4>営業時間</h4>
+                            <p>平日: 15:00 - 23:00<br>土日祝: 12:00 - 23:00</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>電話番号</h4>
+                            <p>03-XXXX-XXXX</p>
+                        </div>
+                    </div>
+                    <div class="social-links-large">
+                        <a href="#" class="social-btn twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-btn instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-btn tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="map-placeholder">
+                    <div class="map-text">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        Google Maps Area
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get in Touch</span>
+                <h2 class="section-title">お問い合わせ</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-forms">
+                <!-- Customer Contact Form -->
+                <div class="form-container">
+                    <div class="form-header">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>ご予約・お問い合わせ</h3>
+                        <p>ご来店やイベントに関するお問い合わせはこちら</p>
+                    </div>
+                    <form class="contact-form" id="customerForm">
+                        <div class="form-group">
+                            <label for="customer-name">お名前 <span class="required">*</span></label>
+                            <input type="text" id="customer-name" name="name" required placeholder="山田 太郎">
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-email">メールアドレス <span class="required">*</span></label>
+                            <input type="email" id="customer-email" name="email" required
+                                placeholder="example@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-phone">電話番号</label>
+                            <input type="tel" id="customer-phone" name="phone" placeholder="090-1234-5678">
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-subject">お問い合わせ種別 <span class="required">*</span></label>
+                            <select id="customer-subject" name="subject" required>
+                                <option value="">選択してください</option>
+                                <option value="reservation">ご予約</option>
+                                <option value="event">イベントについて</option>
+                                <option value="menu">メニューについて</option>
+                                <option value="other">その他</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-message">メッセージ <span class="required">*</span></label>
+                            <textarea id="customer-message" name="message" required rows="5"
+                                placeholder="お問い合わせ内容をご記入ください"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit">
+                            送信する <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Maid Application Form -->
+                <div class="form-container highlight-form">
+                    <div class="form-header">
+                        <i class="fa-solid fa-heart"></i>
+                        <h3>メイド応募フォーム</h3>
+                        <p>一緒に働きたい方はこちらから応募してください♪</p>
+                    </div>
+                    <form class="contact-form" id="applicationForm">
+                        <div class="form-group">
+                            <label for="applicant-name">お名前 <span class="required">*</span></label>
+                            <input type="text" id="applicant-name" name="name" required placeholder="山田 花子">
+                        </div>
+                        <div class="form-group">
+                            <label for="applicant-age">年齢 <span class="required">*</span></label>
+                            <input type="number" id="applicant-age" name="age" required min="18" max="99"
+                                placeholder="20">
+                        </div>
+                        <div class="form-group">
+                            <label for="applicant-email">メールアドレス <span class="required">*</span></label>
+                            <input type="email" id="applicant-email" name="email" required
+                                placeholder="example@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="applicant-phone">電話番号 <span class="required">*</span></label>
+                            <input type="tel" id="applicant-phone" name="phone" required placeholder="090-1234-5678">
+                        </div>
+                        <div class="form-group">
+                            <label for="applicant-experience">接客経験</label>
+                            <select id="applicant-experience" name="experience">
+                                <option value="">選択してください</option>
+                                <option value="none">未経験</option>
+                                <option value="cafe">カフェ経験あり</option>
+                                <option value="maid">メイドカフェ経験あり</option>
+                                <option value="other">その他接客業経験あり</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="applicant-message">自己PR・志望動機 <span class="required">*</span></label>
+                            <textarea id="applicant-message" name="message" required rows="5"
+                                placeholder="あなたの魅力や働きたい理由を教えてください♪"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit">
+                            応募する <i class="fa-solid fa-star"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <i class="fa-solid fa-crown"></i>
+                Magical Cafe ALICE
+            </div>
+            <p class="copyright">&copy; 2024 Magical Cafe ALICE. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
