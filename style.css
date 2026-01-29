@@ -1552,8 +1552,8 @@ ul {
 
 .blog-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
     margin-top: 3rem;
 }
 
@@ -1575,7 +1575,7 @@ ul {
 
 .blog-image {
     position: relative;
-    height: 200px;
+    height: 160px;
     overflow: hidden;
 }
 
@@ -1605,7 +1605,7 @@ ul {
 }
 
 .blog-info {
-    padding: 1.5rem;
+    padding: 1.2rem;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -1620,9 +1620,9 @@ ul {
 }
 
 .blog-title {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     color: var(--text-color);
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     line-height: 1.4;
     font-weight: 700;
 }
