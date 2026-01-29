@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.1 });
 
     // Apply initial styles for scroll animation to cards
-    const animatedElements = document.querySelectorAll('.concept-card, .cast-card, .system-box, .access-content');
+    const animatedElements = document.querySelectorAll('.concept-card, .cast-card, .system-box, .blog-card, .access-content');
     animatedElements.forEach((el, index) => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(50px)';
