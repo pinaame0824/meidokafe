@@ -1590,6 +1590,10 @@ ul {
     transform: scale(1.1);
 }
 
+.blog-img-portrait {
+    object-position: top;
+}
+
 .blog-category {
     position: absolute;
     top: 1rem;
