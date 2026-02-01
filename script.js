@@ -154,17 +154,24 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Customer inquiry:', data);
 
 
-            // Save to LocalStorage (Pseudo Backend)
-            data.date = new Date().toLocaleString('ja-JP');
-            const currentInquiries = JSON.parse(localStorage.getItem('alice_inquiries')) || [];
-            currentInquiries.unshift(data); // Add new item to top
-            localStorage.setItem('alice_inquiries', JSON.stringify(currentInquiries));
 
-            // Show success message
-            alert('お問い合わせありがとうございます！\n内容を確認次第、ご連絡させていただきます。');
-
-            // Reset form
-            customerForm.reset();
+            // Send to Backend API
+            fetch('http://localhost:8000/api/inquiries', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+                .then(response => response.json())
+                .then(result => {
+                    alert('お問い合わせありがとうございます！\n内容を確認次第、ご連絡させていただきます。');
+                    customerForm.reset();
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('送信に失敗しました。サーバーが起動しているか確認してください。');
+                });
         });
     }
 
@@ -180,17 +187,24 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Maid application:', data);
 
 
-            // Save to LocalStorage (Pseudo Backend)
-            data.date = new Date().toLocaleString('ja-JP');
-            const currentApps = JSON.parse(localStorage.getItem('alice_applications')) || [];
-            currentApps.unshift(data); // Add new item to top
-            localStorage.setItem('alice_applications', JSON.stringify(currentApps));
 
-            // Show success message
-            alert('ご応募ありがとうございます！\n書類選考の結果は1週間以内にご連絡いたします。\n一緒に働けることを楽しみにしています♪');
-
-            // Reset form
-            applicationForm.reset();
+            // Send to Backend API
+            fetch('http://localhost:8000/api/applications', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+                .then(response => response.json())
+                .then(result => {
+                    alert('ご応募ありがとうございます！\n書類選考の結果は1週間以内にご連絡いたします。\n一緒に働けることを楽しみにしています♪');
+                    applicationForm.reset();
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('送信に失敗しました。サーバーが起動しているか確認してください。');
+                });
         });
     }
 });

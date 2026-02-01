@@ -1,15 +1,27 @@
-// Demo Password
-const DEMO_PASSWORD = "demo";
+// Store password basically (In real app, use token)
+let currentPassword = "";
 
 // Check Login
 function checkLogin() {
     const password = document.getElementById('adminPassword').value;
-    if (password === DEMO_PASSWORD) {
-        document.getElementById('loginScreen').style.display = 'none';
-        loadData();
-    } else {
-        alert('パスワードが違います');
-    }
+    currentPassword = password;
+
+    // Try to simple load data to verify password
+    fetch(`http://localhost:8000/api/admin/data?password=${password}`)
+        .then(response => {
+            if (response.ok) {
+                document.getElementById('loginScreen').style.display = 'none';
+                return response.json();
+            } else {
+                throw new Error('Unauthorized');
+            }
+        })
+        .then(data => {
+            renderData(data);
+        })
+        .catch(error => {
+            alert('ログインできません。パスワードが違うか、サーバーが起動していません。');
+        });
 }
 
 // Logout
@@ -34,10 +46,21 @@ function switchTab(tabName) {
     event.currentTarget.classList.add('active');
 }
 
-// Load Data from LocalStorage
+// Load and Render Data
 function loadData() {
+    if (!currentPassword) return;
+
+    fetch(`http://localhost:8000/api/admin/data?password=${currentPassword}`)
+        .then(response => response.json())
+        .then(data => {
+            renderData(data);
+        })
+        .catch(error => console.error('Error:', error));
+}
+
+function renderData(data) {
     // --- Inquiries ---
-    const inquiries = JSON.parse(localStorage.getItem('alice_inquiries')) || [];
+    const inquiries = data.inquiries;
     const inquiriesBody = document.getElementById('inquiriesBody');
 
     if (inquiries.length === 0) {
@@ -45,7 +68,7 @@ function loadData() {
     } else {
         inquiriesBody.innerHTML = inquiries.map(item => `
             <tr>
-                <td>${item.date}</td>
+                <td>${item.created_at}</td>
                 <td style="font-weight:bold;">${item.name}</td>
                 <td>${item.email}<br><small>${item.phone || ''}</small></td>
                 <td><span class="status-badge status-new">${item.subject}</span></td>
@@ -56,7 +79,7 @@ function loadData() {
     }
 
     // --- Applications ---
-    const applications = JSON.parse(localStorage.getItem('alice_applications')) || [];
+    const applications = data.applications;
     const applicationsBody = document.getElementById('applicationsBody');
 
     if (applications.length === 0) {
@@ -64,7 +87,7 @@ function loadData() {
     } else {
         applicationsBody.innerHTML = applications.map(item => `
             <tr>
-                <td>${item.date}</td>
+                <td>${item.created_at}</td>
                 <td style="font-weight:bold;">${item.name}</td>
                 <td>${item.age}歳</td>
                 <td>${item.email}<br><small>${item.phone}</small></td>
