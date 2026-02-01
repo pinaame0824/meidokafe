@@ -153,6 +153,13 @@ document.addEventListener('DOMContentLoaded', () => {
             // Here you would normally send data to a server
             console.log('Customer inquiry:', data);
 
+
+            // Save to LocalStorage (Pseudo Backend)
+            data.date = new Date().toLocaleString('ja-JP');
+            const currentInquiries = JSON.parse(localStorage.getItem('alice_inquiries')) || [];
+            currentInquiries.unshift(data); // Add new item to top
+            localStorage.setItem('alice_inquiries', JSON.stringify(currentInquiries));
+
             // Show success message
             alert('お問い合わせありがとうございます！\n内容を確認次第、ご連絡させていただきます。');
 
@@ -171,6 +178,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Here you would normally send data to a server
             console.log('Maid application:', data);
+
+
+            // Save to LocalStorage (Pseudo Backend)
+            data.date = new Date().toLocaleString('ja-JP');
+            const currentApps = JSON.parse(localStorage.getItem('alice_applications')) || [];
+            currentApps.unshift(data); // Add new item to top
+            localStorage.setItem('alice_applications', JSON.stringify(currentApps));
 
             // Show success message
             alert('ご応募ありがとうございます！\n書類選考の結果は1週間以内にご連絡いたします。\n一緒に働けることを楽しみにしています♪');
