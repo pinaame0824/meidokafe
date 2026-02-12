@@ -2022,6 +2022,26 @@ ul {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+
+    /* Global Mobile Adjustments */
+    :root {
+        --section-padding: 4rem 1.5rem;
+    }
+
+    .section {
+        padding: var(--section-padding);
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.8rem;
+    }
+
+    /* Navbar */
     .nav-links {
         display: none;
     }
@@ -2030,17 +2050,79 @@ ul {
         display: flex;
     }
 
+    /* Hero Section */
+    .hero-content {
+        padding: 0 1rem;
+    }
+
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
     }
 
     .hero-decoration {
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 280px;
     }
 
-    .section-title {
-        font-size: 2rem;
+    /* Concept & Cast Grids */
+    .concept-content,
+    .cast-grid,
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .concept-card,
+    .cast-card {
+        padding: 2rem 1.5rem;
+    }
+
+    /* System Section */
+    .system-container {
+        gap: 1.5rem;
+    }
+
+    .system-box {
+        min-width: 100%;
+        padding: 2rem 1.5rem;
+    }
+
+    /* Events */
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event-card {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .event-date {
+        width: 100%;
+        height: 80px;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .date-day {
+        font-size: 1.8rem;
     }
 
     /* Schedule Mobile Adjustments */
@@ -2049,27 +2131,43 @@ ul {
     }
 
     .schedule-header-box {
-        padding: 1.5rem 1rem;
+        padding: 2rem 1.5rem;
         margin-bottom: 2rem;
     }
 
+    .schedule-filter {
+        gap: 0.8rem;
+    }
+
     .day-btn {
-        padding: 0.6rem 1.2rem;
+        padding: 0.6rem 1rem;
         font-size: 0.85rem;
+        flex: 1 1 40%;
+        text-align: center;
     }
 
     .schedule-card {
-        padding: 1rem;
-        gap: 1rem;
+        padding: 1.2rem;
+        gap: 1.2rem;
     }
 
     .schedule-avatar {
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
     }
 
     .schedule-info h3 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+    }
+
+    /* Forms */
+    .contact-forms {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .form-container {
+        padding: 2rem 1.5rem;
     }
 }
 
