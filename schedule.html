@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Schedule | Magical Cafe ALICE</title>
+    <meta name="description" content="秋葉原のコンセプトカフェ「Magical Cafe ALICE」のキャスト出勤スケジュールです。お気に入りのメイドさんと会える時間を確認♪">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Floating Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-crown"></i></span>
+                Alice
+            </a>
+            <div class="nav-links">
+                <a href="index.html#concept">Concept</a>
+                <a href="index.html#guide">Guide</a>
+                <a href="index.html#cast">Cast</a>
+                <a href="index.html#system">System</a>
+                <a href="index.html#events">Events</a>
+                <a href="schedule.html" class="active">Schedule</a>
+                <a href="index.html#blog">Blog</a>
+                <a href="index.html#access">Access</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav">
+        <a href="index.html#concept">Concept</a>
+        <a href="index.html#guide">Guide</a>
+        <a href="index.html#cast">Cast</a>
+        <a href="index.html#system">System</a>
+        <a href="index.html#events">Events</a>
+        <a href="schedule.html" class="active">Schedule</a>
+        <a href="index.html#blog">Blog</a>
+        <a href="index.html#access">Access</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
+
+    <!-- Schedule Header -->
+    <section class="section schedule-section">
+        <div class="container">
+            <div class="schedule-header-box fade-in-up">
+                <span class="section-subtitle">Cast Schedule</span>
+                <h2 class="section-title">出勤スケジュール</h2>
+                <div class="section-line"></div>
+                <p class="section-description">今週のメイドたちの出勤スケジュールです。皆様のお帰りを心よりお待ちしております♪</p>
+            </div>
+
+            <!-- Day Selection Filter -->
+            <div class="schedule-filter fade-in-up delay-1">
+                <button class="day-btn active" data-day="mon">月曜日</button>
+                <button class="day-btn" data-day="tue">火曜日</button>
+                <button class="day-btn" data-day="wed">水曜日</button>
+                <button class="day-btn" data-day="thu">木曜日</button>
+                <button class="day-btn" data-day="fri">金曜日</button>
+                <button class="day-btn" data-day="sat">土曜日</button>
+                <button class="day-btn" data-day="sun">日曜日</button>
+            </div>
+
+            <!-- Mon Schedule -->
+            <div class="schedule-grid active" id="mon">
+                <div class="schedule-card">
+                    <img src="images/cast1.jpg" alt="りな" class="schedule-avatar">
+                    <div class="schedule-info">
+                        <h3>りな</h3>
+                        <div class="schedule-time">
+                            <i class="fa-solid fa-clock"></i> 15:00 - 23:00
+                        </div>
+                        <span class="schedule-badge">お給仕中</span>
+                    </div>
+                </div>
+                <div class="schedule-card">
+                    <img src="images/cast2.jpg" alt="める" class="schedule-avatar">
+                    <div class="schedule-info">
+                        <h3>める</h3>
+                        <div class="schedule-time">
+                            <i class="fa-solid fa-clock"></i> 17:00 - 22:00
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule-card">
+                    <img src="images/cast3.jpg" alt="こはく" class="schedule-avatar">
+                    <div class="schedule-info">
+                        <h3>こはく</h3>
+                        <div class="schedule-time">
+                            <i class="fa-solid fa-clock"></i> 15:00 - 20:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tue Schedule (Example) -->
+            <div class="schedule-grid" id="tue">
+                <div class="schedule-card">
+                    <img src="images/cast2.jpg" alt="める" class="schedule-avatar">
+                    <div class="schedule-info">
+                        <h3>める</h3>
+                        <div class="schedule-time">
+                            <i class="fa-solid fa-clock"></i> 15:00 - 23:00
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule-card">
+                    <img src="images/cast4.jpg" alt="ゆめ" class="schedule-avatar">
+                    <div class="schedule-info">
+                        <h3>ゆめ</h3>
+                        <div class="schedule-time">
+                            <i class="fa-solid fa-clock"></i> 15:00 - 21:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wed Schedule (Example) -->
+            <div class="schedule-grid" id="wed">
+                <div class="schedule-card">
+                    <img src="images/cast1.jpg" alt="りな" class="schedule-avatar">
+                    <div class="schedule-info">
+                        <h3>りな</h3>
+                        <div class="schedule-time">
+                            <i class="fa-solid fa-clock"></i> 15:00 - 22:00
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule-card">
+                    <img src="images/cast3.jpg" alt="こはく" class="schedule-avatar">
+                    <div class="schedule-info">
+                        <h3>こはく</h3>
+                        <div class="schedule-time">
+                            <i class="fa-solid fa-clock"></i> 18:00 - 23:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thu Schedule -->
+            <div class="schedule-grid" id="thu">
+                <div class="schedule-card">
+                    <img src="images/cast4.jpg" alt="ゆめ" class="schedule-avatar">
+                    <div class="schedule-info">
+                        <h3>ゆめ</h3>
+                        <div class="schedule-time">
+                            <i class="fa-solid fa-clock"></i> 15:00 - 23:00
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule-card">
+                    <img src="images/cast1.jpg" alt="りな" class="schedule-avatar">
+                    <div class="schedule-info">
+                        <h3>りな</h3>
+                        <div class="schedule-time">
+                            <i class="fa-solid fa-clock"></i> 17:00 - 22:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fri Schedule -->
+            <div class="schedule-grid" id="fri">
+                <div class="schedule-card">
+                    <img src="images/cast1.jpg" alt="りな" class="schedule-avatar">
+                    <div class="schedule-info">
+                        <h3>りな</h3>
+                        <div class="schedule-time">
+                            <i class="fa-solid fa-clock"></i> 18:00 - 23:30
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule-card">
+                    <img src="images/cast2.jpg" alt="める" class="schedule-avatar">
+                    <div class="schedule-info">
+                        <h3>める</h3>
+                        <div class="schedule-time">
+                            <i class="fa-solid fa-clock"></i> 18:00 - 23:30
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule-card">
+                    <img src="images/cast3.jpg" alt="こはく" class="schedule-avatar">
+                    <div class="schedule-info">
+                        <h3>こはく</h3>
+                        <div class="schedule-time">
+                            <i class="fa-solid fa-clock"></i> 18:00 - 23:30
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sat Schedule -->
+            <div class="schedule-grid" id="sat">
+                <div class="schedule-card">
+                    <img src="images/cast1.jpg" alt="りな" class="schedule-avatar">
+                    <div class="schedule-info">
+                        <h3>りな</h3>
+                        <div class="schedule-time">
+                            <i class="fa-solid fa-clock"></i> 12:00 - 23:00
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule-card">
+                    <img src="images/cast2.jpg" alt="める" class="schedule-avatar">
+                    <div class="schedule-info">
+                        <h3>める</h3>
+                        <div class="schedule-time">
+                            <i class="fa-solid fa-clock"></i> 12:00 - 18:00
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule-card">
+                    <img src="images/cast4.jpg" alt="ゆめ" class="schedule-avatar">
+                    <div class="schedule-info">
+                        <h3>ゆめ</h3>
+                        <div class="schedule-time">
+                            <i class="fa-solid fa-clock"></i> 15:00 - 23:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sun Schedule -->
+            <div class="schedule-grid" id="sun">
+                <div class="schedule-card">
+                    <img src="images/cast3.jpg" alt="こはく" class="schedule-avatar">
+                    <div class="schedule-info">
+                        <h3>こはく</h3>
+                        <div class="schedule-time">
+                            <i class="fa-solid fa-clock"></i> 12:00 - 20:00
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule-card">
+                    <img src="images/cast4.jpg" alt="ゆめ" class="schedule-avatar">
+                    <div class="schedule-info">
+                        <h3>ゆめ</h3>
+                        <div class="schedule-time">
+                            <i class="fa-solid fa-clock"></i> 12:00 - 22:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <i class="fa-solid fa-crown"></i> Alice
+        </div>
+        <p class="copyright">&copy; 2026 Magical Cafe ALICE. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Script for Tab Switching -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dayBtns = document.querySelectorAll('.day-btn');
+            const grids = document.querySelectorAll('.schedule-grid');
+
+            dayBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active from all buttons and grids
+                    dayBtns.forEach(b => b.classList.remove('active'));
+                    grids.forEach(g => g.classList.remove('active'));
+
+                    // Add active to current button
+                    btn.classList.add('active');
+
+                    // Show corresponding grid
+                    const day = btn.getAttribute('data-day');
+                    const targetGrid = document.getElementById(day);
+                    if (targetGrid) {
+                        targetGrid.classList.add('active');
+                    }
+                });
+            });
+
+            // Re-run animation observer for fade-in elements if needed
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
