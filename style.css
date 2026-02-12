@@ -2042,6 +2042,35 @@ ul {
     .section-title {
         font-size: 2rem;
     }
+
+    /* Schedule Mobile Adjustments */
+    .schedule-section {
+        padding-top: 100px;
+    }
+
+    .schedule-header-box {
+        padding: 1.5rem 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .day-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
+    .schedule-card {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .schedule-avatar {
+        width: 60px;
+        height: 60px;
+    }
+
+    .schedule-info h3 {
+        font-size: 1.1rem;
+    }
 }
 
 /* March Events - Blue Theme */
